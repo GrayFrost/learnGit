@@ -68,4 +68,10 @@ module.exports = {
   // breaklineChar: '|', // It is supported for fields body and footer.
   // footerPrefix : 'ISSUES CLOSED:'
   // askForBreakingChangeFirst : true, // default is false
+  rules: {
+    'type-enum': [2, 'always', ['feat', 'fix', 'refactor', 'docs', 'chore', 'style']],
+    'scope-empty': [2, 'never'],
+    'subject-empty': [2, 'never'],
+    'type-empty': [2, 'never']
+  }
 };
