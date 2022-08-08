@@ -4,7 +4,8 @@
   "description": "Learn how to use git",
   "main": "index.js",
   "dependencies": {
-    "commitizen": "^4.0.3"
+    "commitizen": "^4.0.3",
+    "custom-git-commit": "file:.yalc/custom-git-commit"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
@@ -15,7 +16,7 @@
     "husky": "^3.0.9"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "git-mkt",
     "commit": "git-cz"
   },
   "config": {
@@ -26,7 +27,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }  
+    }
   },
   "repository": {
     "type": "git",
