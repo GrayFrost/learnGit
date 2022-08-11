@@ -4,8 +4,7 @@
   "description": "Learn how to use git",
   "main": "index.js",
   "dependencies": {
-    "commitizen": "^4.0.3",
-    "custom-git-commit": "file:.yalc/custom-git-commit"
+    "commitizen": "^4.0.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
